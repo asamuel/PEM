@@ -1,0 +1,70 @@
+algunos comandos son los siguientes 
+
+instalamos git 
+	apt-get install git 
+
+configurar variables globales 
+	git config -global user.name "asamuel"
+	git config -global user.email "samuelxlm0@gmail.com"
+
+si en algun caso necesitamos trabajar en diferentes proyectos y con diferentes cuentas,
+configuramos localmente las variables 
+	git config -local user.name "asamuel"
+	git config -local user-email "samuelxlm0@gmail.com"
+
+colocar colores en git 
+	git config -global color.ui true
+
+mas opciones de configuracion 
+	git config --list 
+
+generando clave ssh, para poder conectarnos a github seguramente 
+	ssh-keygen -t rsa -b 4096 -C "samuelxlm0@gmail.com"
+
+añadiendo la clave ssh al ssh-agent 
+	eval "$(ssh-agent -s)" --ver si el agente esta corriendo 
+
+añadir la clave al agente 
+	ssh-add ~/.ssh/id_rsa
+
+copiar la clave ssh 
+	primero instalamos el paquete xclip o simplemente se abre el archivo y se copia su contenido
+		apt-get install xclip
+		o
+		cat ~/.ssh/id_rsa.pub
+		o
+		cualquier editor de texto, que no sea nano 
+
+añadir la clave a git hub en: 
+	settins>ssh and gpg keys y pegarla y añadir un nombre a la clve, preferiblemente el mismo del que tengamos localmente 
+
+Ahora es necesario tener un directorio especifico para poder trabajar 
+	mkdir miRepositorio 
+	preferiblemente el mismo del que esta en github 
+	cd miRepositorio 
+
+iniciaamos nuestro control de versiones 
+	git	init 
+
+agregamos archivos en nuestro directorio 
+	touch README2 
+
+luegos lo añadimos al git 
+	git add README2 
+
+luego podemos ver el estado de nuestro proyecto 
+	git status 
+
+guardamos los cambios con un commit 
+	git commit -m "este es mi primer commit"
+
+podemos conectarnos con nuestro repositorio de github 
+	git remote add origin github.com:asamuel
+
+podemos traernos todo lo que esta en el directorio de github
+	git pull origin master 
+
+podemos enviar todo lo que tenemos nosotros localmente a github
+	git push oringin master
+
+
