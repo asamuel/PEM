@@ -50,7 +50,8 @@ agregamos archivos en nuestro directorio
 	touch README2 
 
 luegos lo añadimos al git 
-	git add README2 
+	git add README2 --solamente el archivo 
+	git add . --agregar todo 
 
 luego podemos ver el estado de nuestro proyecto 
 	git status 
