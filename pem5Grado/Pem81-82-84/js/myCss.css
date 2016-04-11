@@ -1,0 +1,130 @@
+.mydivEllipse1{
+  background: white;
+  background: -webkit-linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0));
+  background: -moz-linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0)); 
+  background: -o-linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0)); 
+  background: linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0));
+  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .1)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));*/
+  width: 250px;
+  height: 94px;
+  /*margin-top: 20px;*/
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  transform: rotate(40deg);
+  margin-left: 180px;
+  /*opacity: 0.5;
+  filter: alpha(opacity=50);*/
+ -webkit-animation: mySecond 6s ease-out 2s infinite ; /* Chrome, Safari, Opera */
+ -moz-animation: mySecond 6s ease-out 2s infinite ; /*Moz*/
+ animation: mySecond 6s ease-out 2s infinite ;
+  }
+
+  @-webkit-keyframes mySecond {
+ 0% {
+    margin-left: -180px;
+  }
+  14% {
+   margin-left: 0px;
+  }
+  28% {
+    margin-left: 180px;
+  }
+  100% {
+   margin-left: 500px;
+  } 
+}
+
+ @-moz-keyframes  mySecond {
+ 0% {
+    margin-left: -180px;
+  }
+ 14% {
+   margin-left: 0px;
+  }
+  28% {
+    margin-left: 180px;
+  }
+  100% {
+   margin-left: 500px;
+  } 
+}
+
+  @keyframes mySecond {
+ 0% {
+    margin-left: -180px;
+  }
+  14% {
+   margin-left: 0px;
+  }
+  28% {
+    margin-left: 180px;
+  }
+  100% {
+   margin-left: 500px;
+  } 
+}
+
+.myShineG {
+  -webkit-animation: neon2 0.8s ease-in-out infinite alternate;
+  -moz-animation: neon2 0.8s ease-in-out infinite alternate;
+  animation: neon2 0.8s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon2 {
+  from {
+    box-shadow: 0 0 10px #CC5236, 0 0 15px #CC5236, 0 0 40px #E03405, 0 0 60px #E03405;
+  }
+  to {
+    /*box-shadow: 0 0 5px #CC5236, 0 0 10px #CC5236,  0 0 20px #E03405, 0 0 35px #E03405, 0 0 40px #E03405;*/
+  }
+}
+
+@-moz-keyframes  neon2 {
+  from {
+    box-shadow: 0 0 10px #CC5236, 0 0 15px #CC5236, 0 0 40px #E03405, 0 0 60px #E03405;
+  }
+  to {
+    /*box-shadow: 0 0 5px #CC5236, 0 0 10px #CC5236,  0 0 20px #E03405, 0 0 35px #E03405, 0 0 40px #E03405;*/
+  }
+}
+
+@keyframes neon2 {
+  from {
+    box-shadow: 0 0 10px #CC5236, 0 0 15px #CC5236, 0 0 40px #E03405, 0 0 60px #E03405;
+  }
+  to {
+    /*box-shadow: 0 0 5px #CC5236, 0 0 10px #CC5236,  0 0 20px #E03405, 0 0 35px #E03405, 0 0 40px #E03405;*/
+  }
+}
+
+
+.myShineB {
+  -webkit-animation: neon3 0.8s ease-in-out infinite alternate;
+  -moz-animation: neon3 0.8 ease-in-out infinite alternate;
+  animation: neon3 0.8s ease-in-out infinite alternate;
+}
+@-webkit-keyframes neon3 {
+  from {
+    box-shadow: 0 0 10px #80C92D, 0 0 15px #80C92D, 0 0 40px #66CC00, 0 0 60px #66CC00;
+  }
+  to {
+    /*box-shadow: 0 0 5px #CC5236, 0 0 10px #CC5236,  0 0 20px #E03405, 0 0 35px #E03405, 0 0 40px #E03405;*/
+  }
+}
+@-moz-keyframes neon3 {
+  from {
+    box-shadow: 0 0 10px #80C92D, 0 0 15px #80C92D, 0 0 40px #66CC00, 0 0 60px #66CC00;
+  }
+  to {
+    /*box-shadow: 0 0 5px #CC5236, 0 0 10px #CC5236,  0 0 20px #E03405, 0 0 35px #E03405, 0 0 40px #E03405;*/
+  }
+}
+@keyframes neon3 {
+  from {
+    box-shadow: 0 0 10px #80C92D, 0 0 15px #80C92D, 0 0 40px #66CC00, 0 0 60px #66CC00;
+  }
+  to {
+    /*box-shadow: 0 0 5px #CC5236, 0 0 10px #CC5236,  0 0 20px #E03405, 0 0 35px #E03405, 0 0 40px #E03405;*/
+  }
+}

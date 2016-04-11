@@ -1,0 +1,167 @@
+.drop {
+  background-color: white;
+  background: linear-gradient(#B2D0EA, #E0F0FC));
+  background:-webkit-gradient(linear,0% 0%,0% 100%, from(#B2D0EA), to(#E0F0FC)) );
+  background: -o-linear-gradient(#B2D0EA, #E0F0FC);
+  background: -moz-linear-gradient(top, #B2D0EA, #E0F0FC);
+  background-image:
+    linear-gradient(
+      to bottom, 
+      #B2D0EA, #E0F0FC);
+   background: -ms-linear-gradient(#B2D0EA, #E0F0FC);
+	width:1px;
+	height:50px;
+	position: absolute;
+	bottom:200px;
+  opacity: 0.7;
+  filter: alpha(opacity=70); 
+  -webkit-animation: fall .63s linear infinite;
+  -moz-animation: fall .63s linear infinite;
+  animation:fall .63s linear infinite;
+}
+
+/*animate the drops*/
+@-webkit-keyframes fall {
+  to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+  to {margin-top:900px;}
+}
+
+@keyframes fall {
+  to {margin-top:900px;}
+}
+
+.mydivEllipse{
+  background: white;
+  background: -webkit-linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0));
+  background: -moz-linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0)); 
+  background: -o-linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0)); 
+  background: linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0));
+  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .1)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));*/
+  width: 250px;
+  height: 25px;
+  margin-top: 20px;
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  transform: rotate(40deg);
+  margin-left: 180px;
+  /*opacity: 0.5;
+  filter: alpha(opacity=50);*/
+ -webkit-animation: mySecond 6s ease-out 2s infinite ; /* Chrome, Safari, Opera */
+ -moz-animation: mySecond 6s ease-out 2s infinite ; /*Moz*/
+ animation: mySecond 6s ease-out 2s infinite ;
+  }
+
+  @-webkit-keyframes mySecond {
+ 0% {
+    margin-left: -180px;
+  }
+  14% {
+   margin-left: 0px;
+  }
+  28% {
+    margin-left: 180px;
+  }
+  100% {
+   margin-left: 500px;
+  } 
+}
+
+ @-moz-keyframes  mySecond {
+ 0% {
+    margin-left: -180px;
+  }
+ 14% {
+   margin-left: 0px;
+  }
+  28% {
+    margin-left: 180px;
+  }
+  100% {
+   margin-left: 500px;
+  } 
+}
+
+  @keyframes mySecond {
+ 0% {
+    margin-left: -180px;
+  }
+  14% {
+   margin-left: 0px;
+  }
+  28% {
+    margin-left: 180px;
+  }
+  100% {
+   margin-left: 500px;
+  } 
+}
+
+.mydivCuadra{
+  background: white;
+  background: -webkit-linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0));
+  background: -moz-linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0)); 
+  background: -o-linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0)); 
+  background: linear-gradient(white, rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.0));
+  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .1)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));*/
+  width: 250px;
+  height: 25px;
+  margin-top: 20px;
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  transform: rotate(40deg);
+  margin-left: 180px;
+  /*opacity: 0.5;
+  filter: alpha(opacity=50);*/
+ -webkit-animation: myThird 6s ease-out 2s infinite ; /* Chrome, Safari, Opera */
+ -moz-animation: myThird 6s ease-out 2s infinite ; /*Moz*/
+ animation: myThird 6s ease-out 2s infinite ;
+  }
+
+  @-webkit-keyframes myThird {
+ 0% {
+    margin-left: -180px;
+  }
+  14% {
+   margin-left: 0px;
+  }
+  28% {
+    margin-left: 180px;
+  }
+  100% {
+   margin-left: 500px;
+  } 
+}
+
+ @-moz-keyframes  myThird {
+ 0% {
+    margin-left: -180px;
+  }
+ 14% {
+   margin-left: 0px;
+  }
+  28% {
+    margin-left: 180px;
+  }
+  100% {
+   margin-left: 500px;
+  } 
+}
+
+  @keyframes myThird {
+ 0% {
+    margin-left: -180px;
+  }
+  14% {
+   margin-left: 0px;
+  }
+  28% {
+    margin-left: 180px;
+  }
+  100% {
+   margin-left: 500px;
+  } 
+}
