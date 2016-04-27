@@ -1,0 +1,253 @@
+﻿{"frames": [
+
+{
+	"filename": "SbAveVolaDerecha0000",
+	"frame": {"x":12,"y":12,"w":59,"h":29},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0001",
+	"frame": {"x":83,"y":12,"w":59,"h":33},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0002",
+	"frame": {"x":154,"y":12,"w":59,"h":36},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0003",
+	"frame": {"x":225,"y":12,"w":59,"h":40},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0004",
+	"frame": {"x":296,"y":12,"w":59,"h":43},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0005",
+	"frame": {"x":367,"y":12,"w":59,"h":47},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0006",
+	"frame": {"x":438,"y":12,"w":59,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0007",
+	"frame": {"x":12,"y":74,"w":59,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0008",
+	"frame": {"x":83,"y":74,"w":59,"h":57},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0009",
+	"frame": {"x":154,"y":74,"w":59,"h":60},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0010",
+	"frame": {"x":225,"y":74,"w":59,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0011",
+	"frame": {"x":296,"y":74,"w":59,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0012",
+	"frame": {"x":367,"y":74,"w":59,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0013",
+	"frame": {"x":438,"y":74,"w":59,"h":74},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0014",
+	"frame": {"x":12,"y":160,"w":59,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0015",
+	"frame": {"x":83,"y":160,"w":59,"h":74},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0016",
+	"frame": {"x":154,"y":160,"w":59,"h":71},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0017",
+	"frame": {"x":225,"y":160,"w":59,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0018",
+	"frame": {"x":296,"y":160,"w":59,"h":65},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0019",
+	"frame": {"x":367,"y":160,"w":59,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0020",
+	"frame": {"x":438,"y":160,"w":59,"h":58},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0021",
+	"frame": {"x":12,"y":249,"w":59,"h":55},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0022",
+	"frame": {"x":83,"y":249,"w":59,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0023",
+	"frame": {"x":154,"y":249,"w":59,"h":49},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0024",
+	"frame": {"x":225,"y":249,"w":59,"h":45},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0025",
+	"frame": {"x":296,"y":249,"w":59,"h":42},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0026",
+	"frame": {"x":367,"y":249,"w":59,"h":39},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0027",
+	"frame": {"x":438,"y":249,"w":59,"h":36},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0028",
+	"frame": {"x":12,"y":316,"w":59,"h":33},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}
+,{
+	"filename": "SbAveVolaDerecha0029",
+	"frame": {"x":12,"y":12,"w":59,"h":29},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":77},
+	"sourceSize": {"w":59,"h":77}
+}],
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "15.0.0.173",
+	"Target": "Edge Animate",
+	"Target Version": "4.0",
+	"image": "spritAlaDerecha.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":512},
+	"scale": "1"
+}
+}

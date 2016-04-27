@@ -1,0 +1,14 @@
+gris: 2D2D2D --> 5D5D5D
+verde: 213944 -->3A586B
+ventanas azul: 89C4F4
+naranja: F4B350 996E34
+verde glow: 66CC00
+naranja glow: E03405
+otros
+	EA6603
+	E0AB17
+	E5D08F
+	AA7705
+
+27,647 px
+

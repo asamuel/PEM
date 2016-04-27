@@ -1,0 +1,34 @@
+Comienzo
+13 135 #323232 
+13 46 #16a085
+
+Transicion
+2,6  segundos
+
+Fin
+686 135
+686 46
+
+Tamaño letra
+24px lato, medium
+
+¡¡Hola!! El viento se llevó las piezas del rompecabezas. 
+¿Puedes ayudarme a reconstruir el rostro de Francisco?
+Arrastra y ubica las piezas en su lugar.
+
+Posiciones del menu- normal
+x: 0
+y: 53
+
+Posiciones de las instrucciones 
+x: 68
+y: 53
+
+color verde fuerte: #1abc9c
+color verde suave: #16a085
+color del fondo del menu: #232323
+
+https://www.sounddogs.com/results.asp?Type=1&CategoryID=1049&SubcategoryID=8
+
+
+68

@@ -1,0 +1,16 @@
+compatibilidad con navegadores
+
+ultima versiones de los navegadores 2015 Septiembre
+	Mozilla - 41.0.2
+	IE - 11.0.9 para windows 8.1 - 12 IE edge para windows 10	
+	Google - 46.0.2
+	Opera - 32.0
+	safari - 8 para Mac os Yosemite - 5.1 para windows 
+
+Requerimientos Minimos
+	Android: Galaxy S3, Google Nexus 4
+	iOS : iPad 2, iPhone 4S
+	Windows XP: chrome 14, opera 12.0, firefox 9
+	Windows 7: internet explorer 9
+	Mac OS X Snow Leopard: safari 5.1
+	velocidad minima: 512kbps
