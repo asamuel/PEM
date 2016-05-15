@@ -39,7 +39,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
                   "Ana", "Juan", "Pedro", "Tim","Ana","Silvio"];
          var myOrders=["f", "m", "f", "f", "f","m",
                   "f", "m", "m", "m","f","m"];
-         var uniqueArray=[0,1],uniqueArray2=[0,1], uniqueArray3=[0,1,2];
+         var uniqueArrayM=[0,1,2,3],uniqueArrayF=[0,1,2,3],uniqueArray2=[0,1], uniqueArray3=[0,1,2];
+         var uniqueArrayB=["m","f"], beforeBool="";
          
          /*Clases---------------------------------------------------------------------------------------------------*/
          
@@ -59,7 +60,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          
          /*Funciones Globales---------------------------------------------------------------------------------------*/
          sym.startShow = function  () {
-         	console.log("the show beginning");
          	mySoundAmbient.volume(0.25);
          	mySound2.play();
          	sym.$("simTrain").show();
@@ -71,21 +71,34 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          	putNames();
          	s2=sym.createChildSymbol("simDrag",sym.$("container")).getSymbolElement();
          	s2.css({"position": "absolute",  "top" : "0px", "left":'0px' });
+         
+         	//poner caras en el tren
          	for(var i=0; i<3; i++){
          		var val=myOrders[i];
            	   if(val=="m"){
          			sym.getSymbol("simTrain").$("portrait"+(i+1)).html(
-         			'<img src="images/male'+randomNoRepeat()+'.png" alt="Smiley face" height="'+hdivCuadro+'" width="'+wdivCuadro+'">');
-         			sym.getSymbol(s2).$("portraitDrag"+randomNoRepeat3()).html(
-         			'<img src="images/male'+randomNoRepeat2()+'.png" alt="Smiley face" height="'+hdivCuadro+'" width="'+wdivCuadro+'">');
+         			'<img src="images/male'+randomNoRepeat(uniqueArrayM)+'.png" alt="Smiley face" height="'+hdivCuadro+'" width="'+wdivCuadro+'">');
          		}
            	    if(val=="f"){
            	   	sym.getSymbol("simTrain").$("portrait"+(i+1)).html(
-         			'<img src="images/female.png" alt="Smiley face" height="'+hdivCuadro+'" width="'+wdivCuadro+'">');
-         			sym.getSymbol(s2).$("portraitDrag"+randomNoRepeat3()).html(
-         			'<img src="images/female.png" alt="Smiley face" height="'+hdivCuadro+'" width="'+wdivCuadro+'">');
+         			'<img src="images/female'+randomNoRepeat(uniqueArrayF)+'.png" alt="Smiley face" height="'+hdivCuadro+'" width="'+wdivCuadro+'">');
            	   }
          	}	
+         	for(var i=0; i<4; i++){
+         		val=randomNoRepeatBool();
+         		if(val=="m"){
+         		sym.getSymbol(s2).$("portraitDrag"+(i+1)).html(
+         			'<img src="images/male'+randomNoRepeat(uniqueArrayM)+'.png" alt="Smiley face" height="'+hdivCuadro+'" width="'+wdivCuadro+'">');
+         		}
+         		if(val=="f"){
+         		sym.getSymbol(s2).$("portraitDrag"+(i+1)).html(
+         			'<img src="images/female'+randomNoRepeat(uniqueArrayF)+'.png" alt="Smiley face" height="'+hdivCuadro+'" width="'+wdivCuadro+'">');
+         		}
+         	}
+         	//Limpiamos los arreglos
+         	uniqueArrayM=[];
+         	uniqueArrayF=[];
+         
          	for(var i=0; i<3; i++){
          		  myOrders.splice(0,1);
          	}
@@ -106,13 +119,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
             else{
             	sym.$("next").addClass('fired');
             	sym.$('#myT').prop('readonly', true);
-            	sym.$("#myT").attr("placeholder", "FIN");
-            	stylePlaceholder("white");
-            	sym.$("#myT").css({"background-color": "#D91E18", "resize": "none"});
             	sym.getSymbol("simTrain").$("#myDivCuadroInter").removeClass("mydivCuadra");
-            	for(var i=0; i<3; i++){
-         			 sym.$("#myP"+(i+1)).html("<i>--</i>")
-         		}
+            	sym.getSymbol("simTrain").$("portrait4").remove();
+         		sym.getSymbol("simTrain").stop("endTrain");
+         		sym.getSymbol("simTrain").play("endTrain");
+            	sym.$("simLabel").hide('slow', function(){ sym.$("simLabel").remove();});
+            	sym.$("container").hide('slow', function(){ sym.$("container").remove();});
+         
             }
          }
          
@@ -121,24 +134,26 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          		mySoundAmbient.volume(0.25);
          		mySound1.play();
          		bootbox.dialog({
-         		  message: "<h4 style='font-family=Arial, Helvetica, sans-serif'>"+
+         		  message: "<p style='font-family:Arial, Helvetica, sans-serif;font-size:18px;font-style:;'>"+
          		  "¡Necesitamos tu ayuda!. <br><br>"+
-         		  "¿Qué pasajero debe de abordar el tren?"+
-         		  " Arrastra la imagen y escribe su nombre en el cuadro de texto. </h4>",
-         		  title: "<h2 style='font-family=Arial, Helvetica, sans-serif'>Instrucciones<h2>",
+         		  "¿Qué pasajera o pasajero debe de abordar el tren?"+
+         		  " Arrastra la imagen y escribe su nombre en el cuadro de texto. </p>",
+         		  title: "<h2 style='font-family:Arial, Helvetica, sans-serif;margin-top:10;margin-bottom:0;'>Instrucciones<h2>",
          		  closeButton:false,
          		  buttons: {
          			 main: {
          				label: "Aceptar!",
          				className: "btn-primary",
          				callback: function() {
-         					 mySound1.stop();
+         					 mySound1.stop(); 
          					 mySoundAmbient.volume(0.5);
          				}
          			 }
          		  }
          		});
+         	setStyleModal();
          	});
+         
          }
          
          /*Llamados a funciones y css-------------------------------------------------------------------------------*/ 
@@ -153,6 +168,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          	sym.$("simTrain").hide();
          	sym.$("simLabel").hide();
          	sym.$("simTooltip").hide();
+         	sym.$("nextCopy").css({'pointer-events':'none'});
          	sym.getSymbol("simTrain").$("cuadroInte").css({"overflow":"hidden","text-align":"center","cursor":"pointer"});
          	sym.getSymbol("simTrain").$("cuadroInte").html('<div id="myDivCuadroInter"></div>');
          	for(var i=0; i<4; i++){
@@ -161,7 +177,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          	}
          }
          function addLabel(){
-         	console.log("gfdfg");
          	 sym.getSymbol("simLabel").$("text1").append('<p id="myP1" class="myPclass"><i>Null</i></p>');
          	 sym.getSymbol("simLabel").$("text2").append('<p id="myP2" class="myPclass"><i>Null</i></p>');
          	 sym.getSymbol("simLabel").$("text3").append('<p id="myP3" class="myPclass"><i>Null</i></p>');
@@ -170,10 +185,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          	 sym.$(".myPclass").css({"text-shadow": "0 0 0.9em white, 0 0 0.9em #87F, 0 0 0.9em #87F"});
          }
          function drawTextArea(){
-         	stylePlaceholder('black');
+         	stylePlaceholder('white');
          	sym.$("#myT").css({"color" : "black", "font-style": "bold", "width": wDivPlace, "height": hDivPlace});
-         	sym.$("#myT").css({"padding-top":"8px","color" : "black", "text-align": "center", "vertical-align": "middle"});
-         	sym.$("#myT").css({"background-color": "rgba(225,225,225,0.0", "resize": "none"});
+         	sym.$("#myT").css({"padding-top":"8px","color" : "white", "text-align": "center", "vertical-align": "middle"});
+         	sym.$("#myT").css({"background-color": "#00B29A", "resize": "none"});
          	sym.$("#myT").css({"font-size":"24px", "text-shadow": "0 0 0.9em white, 0 0 0.9em #87F, 0 0 0.9em #87F"});
          	sym.$("#myT").css({"position": "absolute","top":"50%","left":"50%","-ms-transform":"translate(-50%,-50%)",
          	"-webkit-transform":"translate(-50%,-50%)","-moz-transform":"translate(-50%,-50%)",
@@ -230,18 +245,33 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          	}
          }
          
-         function randomNoRepeat () {
+         function randomNoRepeat (indexArray) {
          	//Llenamos el arreglo
-         	if (uniqueArray.length==0){
-         	  for (var i = 0; i < 2; i++) {
-         		 uniqueArray.push(i);
+         	if (indexArray.length==0){
+         	  for (var i = 0; i < 4; i++) {
+         		 indexArray.push(i);
          	  };
          	}
-         	var index=Math.floor(Math.random()*uniqueArray.length);
-         	var val=uniqueArray[index];
-         	uniqueArray.splice(index,1);
+         	var index=Math.floor(Math.random()*indexArray.length);
+         	var val=indexArray[index];
+         	indexArray.splice(index,1);
          	return (val+1)
          }
+         function randomNoRepeatBool () {
+         	//Llenamos el arreglo
+         	if (uniqueArrayB.length==0){
+         		uniqueArrayB=["m","f"];
+         	}
+            do{
+               var index=Math.floor(Math.random()*uniqueArrayB.length);
+         		var val=uniqueArrayB[index];
+            }while(val==beforeBool);
+         
+            beforeBool=val;
+         	uniqueArrayB.splice(index,1);
+         	return val;
+         }
+         
          function randomNoRepeat2 () {
          	//Llenamos el arreglo
          	if (uniqueArray2.length==0){
@@ -312,7 +342,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          });
          //Ir  al menu principal 
          sym.getSymbol("simMenu").$("simHome").click(function() {
-         	window.open("../../index.html", "_self");
+         	window.open("../../index.php", "_self");
          });         
          //Ir al menu anterior 
          sym.getSymbol("simMenu").$("simSalir").click(function() {
@@ -323,11 +353,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
          
          if(isIE){
-         	window.location.href="../Menu2.html?indexCat=imag";            
+         	window.location.href="../Menu2.php?indexCat=raz";            
          }
          else{
-         	localStorage.setItem("indexCat","imag");
-         	window.open("../Menu2.html", "_self");
+         	localStorage.setItem("indexCat","raz");
+         	window.open("../Menu2.php", "_self");
          }  
          }
          sym.$("next").click(function() {
@@ -550,7 +580,26 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
    //Edge symbol: 'simTrain'
    (function(symbolName) {   
    
+      
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 10500, function(sym, e) {
+         sym.getComposition().getStage().$("simTrain").hide('slow', 
+         function(){ sym.getComposition().getStage().$("simTrain").remove();
+         sym.getComposition().getStage().$("next").remove();
+         sym.getComposition().getStage().$("nextCopy").css({"background-color":"#FFF5D3"});
+         });
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 7000, function(sym, e) {
+         mySound2.play();
+
+      });
+      //Edge binding end
+
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 5500, function(sym, e) {
+         sym.stop();
          sym.getComposition().getStage().startShow2();
          sym.getComposition().getStage().$("simLabel").show("slow");
          sym.getComposition().getStage().getSymbol("simTrain").$("#myDivCuadroInter").addClass("mydivCuadra");

@@ -31,7 +31,7 @@
             "../../cdn/sass/sassAnimation.css",
             "../../cdn/getColorModal.js",
             "../../cdn/jss.min.js",
-            js+"shine.css"
+            js+"mycss.css"
         ],
         symbols = {
             "stage": {
@@ -44,63 +44,295 @@
                 content: {
                     dom: [
                         {
-                            id: 'back',
-                            type: 'image',
-                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"back.png",'0px','0px']
-                        },
-                        {
-                            id: 'sun',
-                            type: 'image',
-                            rect: ['64px', '0px', '895px', '449px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"sun.png",'0px','0px']
-                        },
-                        {
-                            id: 'simCloud',
-                            symbolName: 'simCloud',
+                            id: 'calcBody',
                             type: 'rect',
-                            rect: ['733', '51', '286', '189', 'auto', 'auto']
+                            rect: ['176px', '265px', '737px', '451px', 'auto', 'auto'],
+                            fill: ["rgba(51,51,51,1.00)"],
+                            stroke: [0,"rgba(0,0,0,1)","none"],
+                            c: [
+                            {
+                                id: 'calcContainer',
+                                type: 'rect',
+                                rect: ['0px', '-192px', '737px', '643px', 'auto', 'auto'],
+                                fill: ["rgba(0,0,0,0.2)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"]
+                            },
+                            {
+                                id: 'd0',
+                                type: 'rect',
+                                rect: ['13px', '272px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't0',
+                                    type: 'text',
+                                    rect: ['50px', '22px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">0</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(46,46,46,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'd1',
+                                type: 'rect',
+                                rect: ['158px', '272px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't1',
+                                    type: 'text',
+                                    rect: ['50px', '22px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">1</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'd2',
+                                type: 'rect',
+                                rect: ['13px', '147px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't2',
+                                    type: 'text',
+                                    rect: ['49px', '22px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">2</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'd3',
+                                type: 'rect',
+                                rect: ['158px', '147px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't3',
+                                    type: 'text',
+                                    rect: ['50px', '22px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">3</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'd4',
+                                type: 'rect',
+                                rect: ['303px', '147px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't4',
+                                    type: 'text',
+                                    rect: ['50px', '22px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">4</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'd5',
+                                type: 'rect',
+                                rect: ['450px', '147px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't5',
+                                    type: 'text',
+                                    rect: ['48px', '22px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">5</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'd6',
+                                type: 'rect',
+                                rect: ['13px', '22px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't6',
+                                    type: 'text',
+                                    rect: ['51px', '20px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">6</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'd7',
+                                type: 'rect',
+                                rect: ['158px', '22px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't7',
+                                    type: 'text',
+                                    rect: ['50px', '21px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">7</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'd8',
+                                type: 'rect',
+                                rect: ['303px', '22px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't8',
+                                    type: 'text',
+                                    rect: ['50px', '21px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">8</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'd9',
+                                type: 'rect',
+                                rect: ['449px', '22px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 't9',
+                                    type: 'text',
+                                    rect: ['51px', '21px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">9</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'dC',
+                                type: 'rect',
+                                rect: ['593px', '147px', '132px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(154,205,50,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 'tC',
+                                    type: 'text',
+                                    rect: ['44px', '22px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">C</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'dintro',
+                                type: 'rect',
+                                rect: ['303px', '272px', '422px', '113px', 'auto', 'auto'],
+                                cursor: 'crosshair',
+                                fill: ["rgba(255,165,0,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"],
+                                userClass: "tile",
+                                c: [
+                                {
+                                    id: 'tI',
+                                    type: 'text',
+                                    rect: ['202px', '22px', 'auto', 'auto', 'auto', 'auto'],
+                                    text: "<p style=\"margin: 0px;\">​<span style=\"font-size: 60px; color: rgb(51, 51, 51);\">=</span></p>",
+                                    font: ['Arial, Helvetica, sans-serif', [24, ""], "rgba(26,26,26,1.00)", "400", "none", "", "break-word", "nowrap"]
+                                }]
+                            },
+                            {
+                                id: 'calcSeparator',
+                                type: 'rect',
+                                rect: ['0px', '-41px', '737px', '41px', 'auto', 'auto'],
+                                fill: ["rgba(51,51,51,1.00)"],
+                                stroke: [0,"rgb(0, 0, 0)","none"]
+                            }]
                         },
                         {
-                            id: 'simTrain',
-                            symbolName: 'simTrain',
+                            id: 'dWatch',
                             type: 'rect',
-                            rect: ['0', '338', '1024', '423', 'auto', 'auto']
+                            rect: ['768px', '287px', '132px', '113px', 'auto', 'auto'],
+                            cursor: 'crosshair',
+                            fill: ["rgba(154,205,50,1.00)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"],
+                            userClass: "tile",
+                            c: [
+                            {
+                                id: 'eye',
+                                type: 'image',
+                                rect: ['29px', '36px', '74px', '41px', 'auto', 'auto'],
+                                fill: ["rgba(0,0,0,0)",im+"eye.png",'0px','0px']
+                            }]
                         },
                         {
-                            id: 'simLabel',
-                            symbolName: 'simLabel',
+                            id: 'calcHead',
                             type: 'rect',
-                            rect: ['73px', '330px', '699', '50', 'auto', 'auto']
-                        },
-                        {
-                            id: 'simTooltip',
-                            symbolName: 'simTooltip',
-                            type: 'rect',
-                            rect: ['556', '253px', '258', '50', 'auto', 'auto']
-                        },
-                        {
-                            id: 'next',
-                            type: 'rect',
-                            rect: ['820px', '355px', '190px', '75px', 'auto', 'auto'],
-                            cursor: 'pointer',
-                            fill: ["rgba(255,255,255,0.00)"],
+                            rect: ['176px', '73px', '737px', '151px', 'auto', 'auto'],
+                            overflow: 'hidden',
+                            fill: ["rgba(169,68,66,1.00)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
-                            id: 'nextCopy',
+                            id: 'hed4',
                             type: 'rect',
-                            rect: ['833px', '368px', '143px', '50px', 'auto', 'auto'],
-                            cursor: 'pointer',
-                            fill: ["rgba(255,255,255,0.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
+                            rect: ['783px', '105px', '102px', '86px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0.94)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"],
+                            userClass: "headers"
                         },
                         {
-                            id: 'container',
+                            id: 'hed3',
                             type: 'rect',
-                            rect: ['89px', '35px', '731px', '286px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,0.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
+                            rect: ['641px', '105px', '102px', '86px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0.94)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"],
+                            userClass: "headers"
+                        },
+                        {
+                            id: 'hed2',
+                            type: 'rect',
+                            rect: ['495px', '105px', '102px', '86px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0.94)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"],
+                            userClass: "headers"
+                        },
+                        {
+                            id: 'hed1',
+                            type: 'rect',
+                            rect: ['349px', '105px', '102px', '86px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0.94)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"],
+                            userClass: "headers"
+                        },
+                        {
+                            id: 'hed0',
+                            type: 'rect',
+                            rect: ['203px', '105px', '102px', '86px', 'auto', 'auto'],
+                            borderRadius: ["0px", "0px", "0px", "0px"],
+                            fill: ["rgba(0,0,0,0.94)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"],
+                            userClass: "headers"
                         },
                         {
                             id: 'simIntrucciones',
@@ -115,9 +347,9 @@
                             rect: ['0px', '53px', 'undefined', 'undefined', 'auto', 'auto']
                         },
                         {
-                            id: 'effect',
+                            id: 'effectDiv',
                             type: 'rect',
-                            rect: ['2px', '0px', '1024px', '768px', 'auto', 'auto'],
+                            rect: ['0px', '0px', '1024px', '768px', 'auto', 'auto'],
                             opacity: '1',
                             fill: ["rgba(255,255,255,1.00)"],
                             stroke: [0,"rgba(0,0,0,1)","none"]
@@ -129,181 +361,23 @@
                             rect: ['null', 'null', '1024px', '768px', 'auto', 'auto'],
                             sizeRange: ['320px','1920px','',''],
                             overflow: 'hidden',
-                            fill: ["rgba(255,255,255,1.00)"]
+                            fill: ["rgba(58,58,77,1.00)"]
                         }
                     }
                 },
                 timeline: {
-                    duration: 3250,
+                    duration: 5000,
                     autoPlay: true,
                     data: [
                         [
-                            "eid3",
+                            "eid1",
                             "opacity",
                             0,
                             1000,
                             "linear",
-                            "${effect}",
+                            "${effectDiv}",
                             '1',
                             '0'
-                        ],
-                        [
-                            "eid111",
-                            "background-color",
-                            0,
-                            0,
-                            "linear",
-                            "${effect}",
-                            'rgba(255,255,255,1.00)',
-                            'rgba(255,255,255,1.00)'
-                        ],
-                        [
-                            "eid5",
-                            "top",
-                            1000,
-                            750,
-                            "easeInOutCirc",
-                            "${sun}",
-                            '-449px',
-                            '0px'
-                        ],
-                        [
-                            "eid4",
-                            "left",
-                            1000,
-                            750,
-                            "easeInOutCirc",
-                            "${sun}",
-                            '64px',
-                            '65px'
-                        ]
-                    ]
-                }
-            },
-            "simCloud": {
-                version: "6.0.0",
-                minimumCompatibleVersion: "5.0.0",
-                build: "6.0.0.400",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            rect: ['-1633px', '0px', '286px', '189px', 'auto', 'auto'],
-                            id: 'nube',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['-702px', '0px', '286px', '189px', 'auto', 'auto'],
-                            id: 'nubeCopy',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['-1158px', '0px', '286px', '189px', 'auto', 'auto'],
-                            id: 'nubeCopy2',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['-202px', '0px', '286px', '189px', 'auto', 'auto'],
-                            id: 'nubeCopy3',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['1779px', '0px', '286px', '189px', 'auto', 'auto'],
-                            id: 'nubeCopy4',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['-1551px', '0px', '286px', '189px', 'auto', 'auto'],
-                            id: 'nubeCopy6',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['-1051px', '0px', '286px', '189px', 'auto', 'auto'],
-                            id: 'nubeCopy5',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, '286px', '189px']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 72500,
-                    autoPlay: false,
-                    labels: {
-                        "start": 43752
-                    },
-                    data: [
-                        [
-                            "eid18",
-                            "left",
-                            0,
-                            62500,
-                            "linear",
-                            "${nubeCopy6}",
-                            '1279px',
-                            '-1551px'
-                        ],
-                        [
-                            "eid16",
-                            "left",
-                            0,
-                            45000,
-                            "linear",
-                            "${nube}",
-                            '298px',
-                            '-1633px'
-                        ],
-                        [
-                            "eid17",
-                            "left",
-                            0,
-                            62500,
-                            "linear",
-                            "${nubeCopy5}",
-                            '1779px',
-                            '-1051px'
-                        ],
-                        [
-                            "eid15",
-                            "left",
-                            0,
-                            45000,
-                            "linear",
-                            "${nubeCopy2}",
-                            '773px',
-                            '-1158px'
-                        ],
-                        [
-                            "eid23",
-                            "left",
-                            27500,
-                            45000,
-                            "linear",
-                            "${nubeCopy}",
-                            '773px',
-                            '-702px'
-                        ],
-                        [
-                            "eid24",
-                            "left",
-                            30000,
-                            42500,
-                            "linear",
-                            "${nubeCopy3}",
-                            '1279px',
-                            '-202px'
                         ]
                     ]
                 }
@@ -319,17 +393,17 @@
                     dom: [
                         {
                             rect: ['0px', '0px', '75px', '252px', 'auto', 'auto'],
-                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            id: 'Rectangle',
                             opacity: '0',
+                            id: 'Rectangle',
+                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
                             type: 'rect',
                             fill: ['rgba(192,192,192,1)']
                         },
                         {
-                            rect: ['0px', '0px', '64px', '246px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '64px', '246px', 'auto', 'auto'],
                             fill: ['rgba(35,35,35,1.00)']
                         },
                         {
@@ -385,44 +459,44 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
                             id: 'fondo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(243,243,243,1.00)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             id: 'puntaLarga',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             id: 'punta',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(22,160,133,1.00)']
                         },
                         {
-                            rect: ['0px', '0px', '62px', '62px', 'auto', 'auto'],
                             id: 'atras_4',
                             type: 'image',
+                            rect: ['0px', '0px', '62px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/atras_4.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['0px', '0px', '62px', '62px', 'auto', 'auto'],
                             id: 'atras_4_over',
                             opacity: '0',
-                            rect: ['0px', '0px', '62px', '62px', 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/atras_4_over.png', '0px', '0px']
                         },
                         {
                             rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
-                            opacity: '0',
-                            id: 'invisibleRectangulo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            id: 'invisibleRectangulo',
+                            opacity: '0',
                             type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
@@ -430,12 +504,12 @@
                             type: 'text',
                             id: 'Text2',
                             opacity: '1',
-                            rect: ['-23px', '16px', 'auto', 'auto', 'auto', 'auto'],
-                            text: '<p style=\"margin: 0px;\">​Ir al Menú Anterior</p>',
-                            align: 'left',
                             font: ['Arial, Helvetica, sans-serif', [23, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
+                            transform: [[], [], [], ['0', '0']],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            rect: ['-23px', '16px', 'auto', 'auto', 'auto', 'auto'],
+                            align: 'left',
+                            text: '<p style=\"margin: 0px;\">​Ir al Menú Anterior</p>'
                         }
                     ],
                     style: {
@@ -605,44 +679,44 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
                             id: 'fondo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(243,243,243,1.00)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             id: 'puntaLarga',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             id: 'punta',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(22,160,133,1.00)']
                         },
                         {
-                            rect: ['1px', '0px', '59px', '60px', 'auto', 'auto'],
                             id: 'menu_1',
                             type: 'image',
+                            rect: ['1px', '0px', '59px', '60px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/menu_1.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['1px', '0px', '59px', '60px', 'auto', 'auto'],
                             id: 'menu_1_over',
                             opacity: '0',
-                            rect: ['1px', '0px', '59px', '60px', 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/menu_1_over.png', '0px', '0px']
                         },
                         {
                             rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
-                            opacity: '0',
-                            id: 'invisibleRectangulo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            id: 'invisibleRectangulo',
+                            opacity: '0',
                             type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
@@ -650,12 +724,12 @@
                             type: 'text',
                             id: 'Text2',
                             opacity: '0',
-                            rect: ['-26px', '16px', 'auto', 'auto', 'auto', 'auto'],
-                            text: '<p style=\"margin: 0px;\">​Ir al Menú Principal</p>',
-                            align: 'left',
                             font: ['Arial, Helvetica, sans-serif', [23, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
+                            transform: [[], [], [], ['0', '0']],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            rect: ['-26px', '16px', 'auto', 'auto', 'auto', 'auto'],
+                            align: 'left',
+                            text: '<p style=\"margin: 0px;\">​Ir al Menú Principal</p>'
                         }
                     ],
                     style: {
@@ -825,44 +899,44 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
                             id: 'fondo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(243,243,243,1.00)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             id: 'puntaLarga',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             id: 'punta',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(22,160,133,1.00)']
                         },
                         {
-                            rect: ['0px', '0px', '64px', '62px', 'auto', 'auto'],
                             id: 'sonido_3',
                             type: 'image',
+                            rect: ['0px', '0px', '64px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/sonido_3.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['0px', '0px', '64px', '62px', 'auto', 'auto'],
                             id: 'sonido_3_over',
                             opacity: '0',
-                            rect: ['0px', '0px', '64px', '62px', 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/sonido_3_over.png', '0px', '0px']
                         },
                         {
                             rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
-                            opacity: '0',
-                            id: 'invisibleRectangulo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            id: 'invisibleRectangulo',
+                            opacity: '0',
                             type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
@@ -870,12 +944,12 @@
                             type: 'text',
                             id: 'Text2',
                             opacity: '0',
-                            rect: ['71px', '17px', 'auto', 'auto', 'auto', 'auto'],
-                            text: '<p style=\"margin: 0px;\">​Encender/Apagar Sonido</p>',
-                            align: 'left',
                             font: ['Arial, Helvetica, sans-serif', [22, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
+                            transform: [[], [], [], ['0', '0']],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            rect: ['71px', '17px', 'auto', 'auto', 'auto', 'auto'],
+                            align: 'left',
+                            text: '<p style=\"margin: 0px;\">​Encender/Apagar Sonido</p>'
                         }
                     ],
                     style: {
@@ -1066,8 +1140,8 @@
                             fill: ['rgba(22,160,133,1.00)']
                         },
                         {
-                            type: 'image',
                             id: 'instruccion_2',
+                            type: 'image',
                             rect: ['1px', '0px', '61px', '60px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/instruccion_2.png', '0px', '0px']
                         },
@@ -1279,19 +1353,20 @@
                             fill: ['rgba(22,160,133,1.00)']
                         },
                         {
-                            type: 'text',
-                            id: 'Text2',
                             textStyle: ['', '', '', '', 'none'],
-                            rect: ['12px', '6px', 'auto', 'auto', 'auto', 'auto'],
-                            align: 'left',
+                            rect: ['150px', '205px', 'auto', 'auto', 'auto', 'auto'],
                             font: ['Arial, Helvetica, sans-serif', [24, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'normal', 'break-word', 'nowrap'],
-                            opacity: '1',
-                            text: '<p style=\"margin: 0px; text-align: center;\">​<span style=\"color: rgb(255, 255, 255); font-weight: 300;\">¡Necesitamos tu ayuda!</span><span style=\"font-weight: 300;\">.</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"font-weight: 300;\">​</span><span style=\"color: rgb(255, 255, 255); font-weight: 300;\">¿Qué pasajera o pasajero debe de abordar el tren?</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-weight: 300;\">​Arrastra la imagen y escribe su nombre en el cuadro de texto.</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"font-family: lato, sans-serif; font-weight: 500; color: rgb(255, 255, 255);\"></span></p>'
+                            align: 'left',
+                            id: 'Text2',
+                            opacity: '0',
+                            text: '<p style=\"margin: 0px; text-align: center;\">​<span style=\"font-family: lato, sans-serif; color: rgb(255, 255, 255); font-weight: 500;\">Digita el número que falta en la&nbsp;</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"font-family: lato, sans-serif; color: rgb(255, 255, 255); font-weight: 500;\"></span><span style=\"font-family: lato, sans-serif; color: rgb(255, 255, 255);\">secuencia que aparece en la pantalla.</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"font-family: lato, sans-serif; font-weight: 500; color: rgb(255, 255, 255);\"></span></p>',
+                            type: 'text'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '686px', '135px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '686px', '135px']
                         }
                     }
                 },
@@ -1313,24 +1388,24 @@
                             '0'
                         ],
                         [
-                            "eid40",
+                            "eid19",
                             "opacity",
                             1000,
-                            0,
-                            "easeOutElastic",
+                            800,
+                            "easeOutQuad",
                             "${Text2}",
                             '0',
                             '1'
                         ],
                         [
-                            "eid37",
+                            "eid15",
                             "top",
                             1000,
-                            1150,
-                            "easeOutElastic",
+                            800,
+                            "easeOutQuad",
                             "${Text2}",
-                            '6px',
-                            '6px'
+                            '205px',
+                            '37px'
                         ],
                         [
                             "eid24",
@@ -1343,14 +1418,14 @@
                             '686px'
                         ],
                         [
-                            "eid35",
+                            "eid14",
                             "left",
                             1000,
-                            1150,
-                            "easeOutElastic",
+                            800,
+                            "easeOutQuad",
                             "${Text2}",
-                            '-742px',
-                            '12px'
+                            '150px',
+                            '150px'
                         ],
                         [
                             "eid26",
@@ -1364,496 +1439,10 @@
                         ]
                     ]
                 }
-            },
-            "simTrain": {
-                version: "6.0.0",
-                minimumCompatibleVersion: "5.0.0",
-                build: "6.0.0.400",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            type: 'image',
-                            id: 'trainHead',
-                            rect: ['823px', '103px', '571px', '304px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/trainHead.png', '0px', '0px']
-                        },
-                        {
-                            type: 'image',
-                            id: 'train',
-                            rect: ['14px', '50px', '833px', '336px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/train.png', '0px', '0px']
-                        },
-                        {
-                            rect: ['624px', '103px', '124px', '139px', 'auto', 'auto'],
-                            userClass: '',
-                            id: 'cuadroInte',
-                            stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(192,192,192,0.00)']
-                        },
-                        {
-                            rect: ['87px', '103px', '124px', '139px', 'auto', 'auto'],
-                            userClass: 'portrait',
-                            id: 'portrait1',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(192,192,192,0)']
-                        },
-                        {
-                            rect: ['265px', '103px', '124px', '139px', 'auto', 'auto'],
-                            userClass: 'portrait',
-                            id: 'portrait2',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(192,192,192,0)']
-                        },
-                        {
-                            rect: ['445px', '103px', '124px', '139px', 'auto', 'auto'],
-                            userClass: 'portrait',
-                            id: 'portrait3',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(192,192,192,0)']
-                        },
-                        {
-                            rect: ['625px', '103px', '124px', '139px', 'auto', 'auto'],
-                            userClass: 'portrait',
-                            id: 'portrait4',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(192,192,192,0)']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, '1024px', '423px']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 10500,
-                    autoPlay: false,
-                    labels: {
-                        "endTrain": 6000
-                    },
-                    data: [
-                        [
-                            "eid34",
-                            "left",
-                            0,
-                            4321,
-                            "linear",
-                            "${trainHead}",
-                            '-536px',
-                            '760px'
-                        ],
-                        [
-                            "eid38",
-                            "left",
-                            4321,
-                            1179,
-                            "easeOutElastic",
-                            "${trainHead}",
-                            '760px',
-                            '823px'
-                        ],
-                        [
-                            "eid113",
-                            "left",
-                            6000,
-                            4500,
-                            "linear",
-                            "${trainHead}",
-                            '823px',
-                            '1907px'
-                        ],
-                        [
-                            "eid33",
-                            "left",
-                            0,
-                            4321,
-                            "linear",
-                            "${train}",
-                            '-1344px',
-                            '-48px'
-                        ],
-                        [
-                            "eid36",
-                            "left",
-                            4321,
-                            1179,
-                            "easeOutElastic",
-                            "${train}",
-                            '-48px',
-                            '14px'
-                        ],
-                        [
-                            "eid112",
-                            "left",
-                            6000,
-                            4500,
-                            "linear",
-                            "${train}",
-                            '14px',
-                            '1098px'
-                        ]
-                    ]
-                }
-            },
-            "simLabel": {
-                version: "6.0.0",
-                minimumCompatibleVersion: "5.0.0",
-                build: "6.0.0.400",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            rect: ['-1px', '-2px', '175px', '50px', 'auto', 'auto'],
-                            userClass: 'labelClass',
-                            id: 'text1',
-                            stroke: [1, 'rgb(0, 0, 0)', 'dashed'],
-                            type: 'rect',
-                            fill: ['rgba(255,255,255,0.82)']
-                        },
-                        {
-                            rect: ['174px', '-2px', '175px', '50px', 'auto', 'auto'],
-                            userClass: 'labelClass',
-                            id: 'text2',
-                            stroke: [1, 'rgb(0, 0, 0)', 'dashed'],
-                            type: 'rect',
-                            fill: ['rgba(255,255,255,0.82)']
-                        },
-                        {
-                            rect: ['349px', '-2px', '175px', '50px', 'auto', 'auto'],
-                            userClass: 'labelClass',
-                            id: 'text3',
-                            stroke: [1, 'rgb(0, 0, 0)', 'dashed'],
-                            type: 'rect',
-                            fill: ['rgba(255,255,255,0.82)']
-                        },
-                        {
-                            rect: ['524px', '-2px', '175px', '50px', 'auto', 'auto'],
-                            id: 'text4',
-                            stroke: [1, 'rgb(0, 0, 0)', 'dashed'],
-                            type: 'rect',
-                            fill: ['rgba(255,255,255,0.82)']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, '699px', '50px']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 0,
-                    autoPlay: true,
-                    data: [
-
-                    ]
-                }
-            },
-            "simTooltip": {
-                version: "6.0.0",
-                minimumCompatibleVersion: "5.0.0",
-                build: "6.0.0.400",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            type: 'group',
-                            id: 'Group',
-                            rect: ['0px', '0px', '262', '71', 'auto', 'auto'],
-                            c: [
-                            {
-                                rect: ['115px', '11px', '22px', '35px', 'auto', 'auto'],
-                                transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
-                                id: 'RectangleCopy',
-                                stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                                type: 'rect',
-                                fill: ['rgba(43,103,147,1.00)']
-                            },
-                            {
-                                rect: ['40px', '0px', '162px', '36px', 'auto', 'auto'],
-                                id: 'Rectangle',
-                                stroke: [2, 'rgba(43,103,147,1.00)', 'none'],
-                                type: 'rect',
-                                fill: ['rgba(35,35,35,1.00)']
-                            },
-                            {
-                                font: ['Arial, Helvetica, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'nowrap'],
-                                id: 'Text',
-                                text: '<p style=\"margin: 0px;\">​<span style=\"color: rgb(255, 255, 255);\">¡Escribe aquí!</span></p>',
-                                type: 'text',
-                                rect: ['58px', '0px', 'auto', 'auto', 'auto', 'auto']
-                            }]
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, '258px', '50px']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 2400,
-                    autoPlay: false,
-                    data: [
-                        [
-                            "eid47",
-                            "top",
-                            0,
-                            400,
-                            "linear",
-                            "${Group}",
-                            '0px',
-                            '20px'
-                        ],
-                        [
-                            "eid48",
-                            "top",
-                            400,
-                            400,
-                            "linear",
-                            "${Group}",
-                            '20px',
-                            '0px'
-                        ],
-                        [
-                            "eid49",
-                            "top",
-                            800,
-                            400,
-                            "linear",
-                            "${Group}",
-                            '0px',
-                            '20px'
-                        ],
-                        [
-                            "eid50",
-                            "top",
-                            1200,
-                            400,
-                            "linear",
-                            "${Group}",
-                            '20px',
-                            '0px'
-                        ],
-                        [
-                            "eid51",
-                            "top",
-                            1600,
-                            400,
-                            "linear",
-                            "${Group}",
-                            '0px',
-                            '20px'
-                        ],
-                        [
-                            "eid52",
-                            "top",
-                            2000,
-                            400,
-                            "linear",
-                            "${Group}",
-                            '20px',
-                            '0px'
-                        ]
-                    ]
-                }
-            },
-            "simDrag": {
-                version: "6.0.0",
-                minimumCompatibleVersion: "5.0.0",
-                build: "6.0.0.400",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            type: 'rect',
-                            id: 'Rectangle',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '699px', '232px', 'auto', 'auto'],
-                            fill: ['rgba(255,255,255,0.00)']
-                        },
-                        {
-                            userClass: 'box',
-                            rect: ['27px', '69px', '124px', '139px', 'auto', 'auto'],
-                            id: 'portraitDrag1',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(34,34,34,0.00)']
-                        },
-                        {
-                            userClass: 'box',
-                            rect: ['203px', '-1px', '124px', '139px', 'auto', 'auto'],
-                            id: 'portraitDrag2',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(34,34,34,0.00)']
-                        },
-                        {
-                            userClass: 'box',
-                            rect: ['382px', '82px', '124px', '139px', 'auto', 'auto'],
-                            id: 'portraitDrag3',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(34,34,34,0.00)']
-                        },
-                        {
-                            userClass: 'box',
-                            rect: ['569px', '-1px', '124px', '139px', 'auto', 'auto'],
-                            id: 'portraitDrag4',
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(34,34,34,0.00)']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, '699px', '232px']
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 0,
-                    autoPlay: false,
-                    data: [
-                        [
-                            "eid117",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag1}",
-                            '27px',
-                            '27px'
-                        ],
-                        [
-                            "eid123",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag2}",
-                            '203px',
-                            '203px'
-                        ],
-                        [
-                            "eid58",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag3}",
-                            '82px',
-                            '82px'
-                        ],
-                        [
-                            "eid63",
-                            "background-color",
-                            0,
-                            0,
-                            "linear",
-                            "${Rectangle}",
-                            'rgba(255,255,255,0.00)',
-                            'rgba(255,255,255,0.00)'
-                        ],
-                        [
-                            "eid56",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag1}",
-                            '69px',
-                            '69px'
-                        ],
-                        [
-                            "eid119",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag2}",
-                            '-1px',
-                            '-1px'
-                        ],
-                        [
-                            "eid125",
-                            "background-color",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag4}",
-                            'rgba(34,34,34,0.00)',
-                            'rgba(34,34,34,0.00)'
-                        ],
-                        [
-                            "eid126",
-                            "background-color",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag1}",
-                            'rgba(34,34,34,0.00)',
-                            'rgba(34,34,34,0.00)'
-                        ],
-                        [
-                            "eid128",
-                            "background-color",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag2}",
-                            'rgba(34,34,34,0.00)',
-                            'rgba(34,34,34,0.00)'
-                        ],
-                        [
-                            "eid122",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag3}",
-                            '382px',
-                            '382px'
-                        ],
-                        [
-                            "eid127",
-                            "background-color",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag3}",
-                            'rgba(34,34,34,0.00)',
-                            'rgba(34,34,34,0.00)'
-                        ],
-                        [
-                            "eid124",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${portraitDrag4}",
-                            '569px',
-                            '569px'
-                        ]
-                    ]
-                }
             }
         };
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("Pem6_edgeActions.js");
-})("EDGE-250268");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("Pem1-2_edgeActions.js");
+})("EDGE-20746995");

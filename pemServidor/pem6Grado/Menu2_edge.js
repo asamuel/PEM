@@ -417,12 +417,12 @@
                                 id: 'pem38',
                                 type: 'image',
                                 rect: ['5px', '5px', '240px', '179px', 'auto', 'auto'],
-                                fill: ['rgba(0,0,0,0)', '../images/default.png', '0px', '0px']
+                                fill: ['rgba(0,0,0,0)', '../images/pem1-2.jpg', '0px', '0px']
                             },
                             {
                                 rect: ['84px', '189px', 'auto', 'auto', 'auto', 'auto'],
                                 id: 'TextCopy2',
-                                text: '<p style=\"margin: 0px;\">​<span style=\"font-size: 24px; font-weight: 300;\">Pem 38</span></p>',
+                                text: '<p style=\"margin: 0px;\">​<span style=\"font-size: 24px; font-weight: 300;\">Pem 1-2</span></p>',
                                 font: ['Arial, Helvetica, sans-serif', [26, 'px'], 'rgba(0,0,0,1)', '400', 'none', '', 'break-word', 'nowrap'],
                                 type: 'text'
                             },
