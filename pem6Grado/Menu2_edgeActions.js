@@ -189,6 +189,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
          });
  
          sym.getSymbol("simCont").getSymbol("simRazonamientoM").$("fondo4").wrap( "<a href=\"Pem6/Pem6.html\"  target='_self'></a>" );
+         sym.getSymbol("simCont").getSymbol("simRazonamientoM").$("fondo6").wrap( "<a href=\"Pem1-2/Pem1-2.html\"  target='_self'></a>" );
          //Imaginacion
          /*sym.getSymbol("simCont").getSymbol("simImaginacion").$("fondo1").wrap( "<a href=\"Pem20/Pem20.html\"  target='_self'></a>" );
  
