@@ -250,6 +250,16 @@ myArrayFeedbackObj.push(myClassTemp);
 myArrayFeedbackObj[i].antonimo
 myArrayFeedbackObj[i].feedback
 
+//agregar un atributo booleano mediante jQuery
+sym.$('#myT').prop('readonly', true);
+//agregar un atributo mediante jquery
+sym.$("#myT").attr("placeholder", "FIN");
+
+//elimina un objeto del dom, despues de que termine una accion posterior
+sym.$("simTrain").hide('slow', function(){ sym.$("simTrain").remove();});
+
+//retrasar animacion con delay 
+sym.getSymbol("simTrain").$("portrait1").delay(100).show("slow");
 
 
 //funciones 
@@ -290,6 +300,9 @@ switch (num) {
         sym.myStartTimer (4000,1); //llamar funcion del cronometro
         break;
 }}
+
+//otra forma de time, mas sencilla 
+setTimeout(function(){},200);
 
 //relog con canvas y javaScript
 
