@@ -28,6 +28,8 @@
             "../../cdn/jquery-ui.js",
             "../../cdn/jquery.ui.touch-punch.min.js",
             "../../cdn/mycss.css",
+            "../../cdn/sass/sassAnimation.css",
+            "../../cdn/getColorModal.js",
             "../../cdn/jss.min.js",
             js+"shine.css"
         ],
@@ -86,6 +88,14 @@
                             stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
+                            id: 'nextCopy',
+                            type: 'rect',
+                            rect: ['833px', '368px', '143px', '50px', 'auto', 'auto'],
+                            cursor: 'pointer',
+                            fill: ["rgba(255,255,255,0.00)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"]
+                        },
+                        {
                             id: 'container',
                             type: 'rect',
                             rect: ['89px', '35px', '731px', '286px', 'auto', 'auto'],
@@ -128,16 +138,6 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid111",
-                            "background-color",
-                            0,
-                            0,
-                            "linear",
-                            "${effect}",
-                            'rgba(255,255,255,1.00)',
-                            'rgba(255,255,255,1.00)'
-                        ],
-                        [
                             "eid3",
                             "opacity",
                             0,
@@ -146,6 +146,16 @@
                             "${effect}",
                             '1',
                             '0'
+                        ],
+                        [
+                            "eid111",
+                            "background-color",
+                            0,
+                            0,
+                            "linear",
+                            "${effect}",
+                            'rgba(255,255,255,1.00)',
+                            'rgba(255,255,255,1.00)'
                         ],
                         [
                             "eid5",
@@ -180,45 +190,45 @@
                 content: {
                     dom: [
                         {
-                            type: 'image',
-                            id: 'nube',
                             rect: ['-1633px', '0px', '286px', '189px', 'auto', 'auto'],
+                            id: 'nube',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            id: 'nubeCopy',
                             rect: ['-702px', '0px', '286px', '189px', 'auto', 'auto'],
+                            id: 'nubeCopy',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            id: 'nubeCopy2',
                             rect: ['-1158px', '0px', '286px', '189px', 'auto', 'auto'],
+                            id: 'nubeCopy2',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            id: 'nubeCopy3',
                             rect: ['-202px', '0px', '286px', '189px', 'auto', 'auto'],
+                            id: 'nubeCopy3',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            id: 'nubeCopy4',
                             rect: ['1779px', '0px', '286px', '189px', 'auto', 'auto'],
+                            id: 'nubeCopy4',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            id: 'nubeCopy6',
                             rect: ['-1551px', '0px', '286px', '189px', 'auto', 'auto'],
+                            id: 'nubeCopy6',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
-                            id: 'nubeCopy5',
                             rect: ['-1051px', '0px', '286px', '189px', 'auto', 'auto'],
+                            id: 'nubeCopy5',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/nube.png', '0px', '0px']
                         }
                     ],
@@ -266,14 +276,14 @@
                             '-1051px'
                         ],
                         [
-                            "eid24",
+                            "eid15",
                             "left",
-                            30000,
-                            42500,
+                            0,
+                            45000,
                             "linear",
-                            "${nubeCopy3}",
-                            '1279px',
-                            '-202px'
+                            "${nubeCopy2}",
+                            '773px',
+                            '-1158px'
                         ],
                         [
                             "eid23",
@@ -286,14 +296,14 @@
                             '-702px'
                         ],
                         [
-                            "eid15",
+                            "eid24",
                             "left",
-                            0,
-                            45000,
+                            30000,
+                            42500,
                             "linear",
-                            "${nubeCopy2}",
-                            '773px',
-                            '-1158px'
+                            "${nubeCopy3}",
+                            '1279px',
+                            '-202px'
                         ]
                     ]
                 }
@@ -309,17 +319,17 @@
                     dom: [
                         {
                             rect: ['0px', '0px', '75px', '252px', 'auto', 'auto'],
-                            opacity: '0',
-                            id: 'Rectangle',
                             stroke: [0, 'rgba(0,0,0,1)', 'none'],
+                            id: 'Rectangle',
+                            opacity: '0',
                             type: 'rect',
                             fill: ['rgba(192,192,192,1)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['0px', '0px', '64px', '246px', 'auto', 'auto'],
                             id: 'Rectangle2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '64px', '246px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(35,35,35,1.00)']
                         },
                         {
@@ -375,57 +385,57 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'fondo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
                             fill: ['rgba(243,243,243,1.00)']
                         },
                         {
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'puntaLarga',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'punta',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             fill: ['rgba(22,160,133,1.00)']
                         },
                         {
-                            type: 'image',
-                            id: 'atras_4',
                             rect: ['0px', '0px', '62px', '62px', 'auto', 'auto'],
+                            id: 'atras_4',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/atras_4.png', '0px', '0px']
                         },
                         {
-                            rect: ['0px', '0px', '62px', '62px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'atras_4_over',
                             opacity: '0',
-                            type: 'image',
+                            rect: ['0px', '0px', '62px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/atras_4_over.png', '0px', '0px']
                         },
                         {
                             rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            id: 'invisibleRectangulo',
                             opacity: '0',
+                            id: 'invisibleRectangulo',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
                             type: 'text',
                             id: 'Text2',
-                            text: '<p style=\"margin: 0px;\">​Ir al Menú Anterior</p>',
-                            font: ['Arial, Helvetica, sans-serif', [23, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
-                            transform: [[], [], [], ['0', '0']],
-                            textStyle: ['', '', '', '', 'none'],
+                            opacity: '1',
                             rect: ['-23px', '16px', 'auto', 'auto', 'auto', 'auto'],
+                            text: '<p style=\"margin: 0px;\">​Ir al Menú Anterior</p>',
                             align: 'left',
-                            opacity: '1'
+                            font: ['Arial, Helvetica, sans-serif', [23, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
+                            textStyle: ['', '', '', '', 'none'],
+                            transform: [[], [], [], ['0', '0']]
                         }
                     ],
                     style: {
@@ -595,57 +605,57 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'fondo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
                             fill: ['rgba(243,243,243,1.00)']
                         },
                         {
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'puntaLarga',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'punta',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             fill: ['rgba(22,160,133,1.00)']
                         },
                         {
-                            type: 'image',
-                            id: 'menu_1',
                             rect: ['1px', '0px', '59px', '60px', 'auto', 'auto'],
+                            id: 'menu_1',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/menu_1.png', '0px', '0px']
                         },
                         {
-                            rect: ['1px', '0px', '59px', '60px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'menu_1_over',
                             opacity: '0',
-                            type: 'image',
+                            rect: ['1px', '0px', '59px', '60px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/menu_1_over.png', '0px', '0px']
                         },
                         {
                             rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            id: 'invisibleRectangulo',
                             opacity: '0',
+                            id: 'invisibleRectangulo',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
                             type: 'text',
                             id: 'Text2',
-                            text: '<p style=\"margin: 0px;\">​Ir al Menú Principal</p>',
-                            font: ['Arial, Helvetica, sans-serif', [23, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
-                            transform: [[], [], [], ['0', '0']],
-                            textStyle: ['', '', '', '', 'none'],
+                            opacity: '0',
                             rect: ['-26px', '16px', 'auto', 'auto', 'auto', 'auto'],
+                            text: '<p style=\"margin: 0px;\">​Ir al Menú Principal</p>',
                             align: 'left',
-                            opacity: '0'
+                            font: ['Arial, Helvetica, sans-serif', [23, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
+                            textStyle: ['', '', '', '', 'none'],
+                            transform: [[], [], [], ['0', '0']]
                         }
                     ],
                     style: {
@@ -815,57 +825,57 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'fondo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
                             fill: ['rgba(243,243,243,1.00)']
                         },
                         {
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'puntaLarga',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'punta',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             fill: ['rgba(22,160,133,1.00)']
                         },
                         {
-                            type: 'image',
-                            id: 'sonido_3',
                             rect: ['0px', '0px', '64px', '62px', 'auto', 'auto'],
+                            id: 'sonido_3',
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/sonido_3.png', '0px', '0px']
                         },
                         {
-                            rect: ['0px', '0px', '64px', '62px', 'auto', 'auto'],
+                            type: 'image',
                             id: 'sonido_3_over',
                             opacity: '0',
-                            type: 'image',
+                            rect: ['0px', '0px', '64px', '62px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/sonido_3_over.png', '0px', '0px']
                         },
                         {
                             rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            id: 'invisibleRectangulo',
                             opacity: '0',
+                            id: 'invisibleRectangulo',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
                             type: 'text',
                             id: 'Text2',
-                            text: '<p style=\"margin: 0px;\">​Encender/Apagar Sonido</p>',
-                            font: ['Arial, Helvetica, sans-serif', [22, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
-                            transform: [[], [], [], ['0', '0']],
-                            textStyle: ['', '', '', '', 'none'],
+                            opacity: '0',
                             rect: ['71px', '17px', 'auto', 'auto', 'auto', 'auto'],
+                            text: '<p style=\"margin: 0px;\">​Encender/Apagar Sonido</p>',
                             align: 'left',
-                            opacity: '0'
+                            font: ['Arial, Helvetica, sans-serif', [22, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
+                            textStyle: ['', '', '', '', 'none'],
+                            transform: [[], [], [], ['0', '0']]
                         }
                     ],
                     style: {
@@ -1035,44 +1045,44 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
                             id: 'fondo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(243,243,243,1.00)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             id: 'puntaLarga',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
                             id: 'punta',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['64px', '0px', '4px', '60px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(22,160,133,1.00)']
                         },
                         {
-                            rect: ['1px', '0px', '61px', '60px', 'auto', 'auto'],
-                            id: 'instruccion_2',
                             type: 'image',
+                            id: 'instruccion_2',
+                            rect: ['1px', '0px', '61px', '60px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/instruccion_2.png', '0px', '0px']
                         },
                         {
-                            type: 'image',
+                            rect: ['1px', '0px', '61px', '60px', 'auto', 'auto'],
                             id: 'instruccion_2_over',
                             opacity: '0',
-                            rect: ['1px', '0px', '61px', '60px', 'auto', 'auto'],
+                            type: 'image',
                             fill: ['rgba(0,0,0,0)', 'images/instruccion_2_over.png', '0px', '0px']
                         },
                         {
                             rect: ['0px', '0px', '64px', '60px', 'auto', 'auto'],
-                            opacity: '0',
-                            id: 'invisibleRectangulo',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            id: 'invisibleRectangulo',
+                            opacity: '0',
                             type: 'rect',
                             fill: ['rgba(26,188,156,1.00)']
                         },
@@ -1080,12 +1090,12 @@
                             type: 'text',
                             id: 'Text2',
                             opacity: '0',
-                            rect: ['9px', '16px', 'auto', 'auto', 'auto', 'auto'],
-                            text: '<p style=\"margin: 0px;\">​Intrucciones</p>',
-                            align: 'left',
                             font: ['Arial, Helvetica, sans-serif', [23, 'px'], 'rgba(255,255,255,1)', '500', 'none', 'normal', 'break-word', 'nowrap'],
+                            transform: [[], [], [], ['0', '0']],
                             textStyle: ['', '', '', '', 'none'],
-                            transform: [[], [], [], ['0', '0']]
+                            rect: ['9px', '16px', 'auto', 'auto', 'auto', 'auto'],
+                            align: 'left',
+                            text: '<p style=\"margin: 0px;\">​Intrucciones</p>'
                         }
                     ],
                     style: {
@@ -1276,7 +1286,7 @@
                             align: 'left',
                             font: ['Arial, Helvetica, sans-serif', [24, 'px'], 'rgba(0,0,0,1)', '400', 'none', 'normal', 'break-word', 'nowrap'],
                             opacity: '1',
-                            text: '<p style=\"margin: 0px; text-align: center;\">​<span style=\"color: rgb(255, 255, 255); font-weight: 300;\">¡Necesitamos tu ayuda!</span><span style=\"font-weight: 300;\">.</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"font-weight: 300;\">​</span><span style=\"color: rgb(255, 255, 255); font-weight: 300;\">¿Qué pasajero debe de abordar el tren?</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-weight: 300;\">​Arrastra la imagen y escribe su nombre en el cuadro de texto.</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"font-family: lato, sans-serif; font-weight: 500; color: rgb(255, 255, 255);\"></span></p>'
+                            text: '<p style=\"margin: 0px; text-align: center;\">​<span style=\"color: rgb(255, 255, 255); font-weight: 300;\">¡Necesitamos tu ayuda!</span><span style=\"font-weight: 300;\">.</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"font-weight: 300;\">​</span><span style=\"color: rgb(255, 255, 255); font-weight: 300;\">¿Qué pasajera o pasajero debe de abordar el tren?</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"color: rgb(255, 255, 255); font-weight: 300;\">​Arrastra la imagen y escribe su nombre en el cuadro de texto.</span></p><p style=\"margin: 0px; text-align: center;\"><span style=\"font-family: lato, sans-serif; font-weight: 500; color: rgb(255, 255, 255);\"></span></p>'
                         }
                     ],
                     style: {
@@ -1424,9 +1434,42 @@
                     }
                 },
                 timeline: {
-                    duration: 5500,
+                    duration: 10500,
                     autoPlay: false,
+                    labels: {
+                        "endTrain": 6000
+                    },
                     data: [
+                        [
+                            "eid34",
+                            "left",
+                            0,
+                            4321,
+                            "linear",
+                            "${trainHead}",
+                            '-536px',
+                            '760px'
+                        ],
+                        [
+                            "eid38",
+                            "left",
+                            4321,
+                            1179,
+                            "easeOutElastic",
+                            "${trainHead}",
+                            '760px',
+                            '823px'
+                        ],
+                        [
+                            "eid113",
+                            "left",
+                            6000,
+                            4500,
+                            "linear",
+                            "${trainHead}",
+                            '823px',
+                            '1907px'
+                        ],
                         [
                             "eid33",
                             "left",
@@ -1448,24 +1491,14 @@
                             '14px'
                         ],
                         [
-                            "eid34",
+                            "eid112",
                             "left",
-                            0,
-                            4321,
+                            6000,
+                            4500,
                             "linear",
-                            "${trainHead}",
-                            '-536px',
-                            '760px'
-                        ],
-                        [
-                            "eid38",
-                            "left",
-                            4321,
-                            1179,
-                            "easeOutElastic",
-                            "${trainHead}",
-                            '760px',
-                            '823px'
+                            "${train}",
+                            '14px',
+                            '1098px'
                         ]
                     ]
                 }
@@ -1480,34 +1513,34 @@
                 content: {
                     dom: [
                         {
-                            userClass: 'labelClass',
                             rect: ['-1px', '-2px', '175px', '50px', 'auto', 'auto'],
+                            userClass: 'labelClass',
                             id: 'text1',
                             stroke: [1, 'rgb(0, 0, 0)', 'dashed'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,0.82)']
                         },
                         {
-                            userClass: 'labelClass',
                             rect: ['174px', '-2px', '175px', '50px', 'auto', 'auto'],
+                            userClass: 'labelClass',
                             id: 'text2',
                             stroke: [1, 'rgb(0, 0, 0)', 'dashed'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,0.82)']
                         },
                         {
-                            userClass: 'labelClass',
                             rect: ['349px', '-2px', '175px', '50px', 'auto', 'auto'],
+                            userClass: 'labelClass',
                             id: 'text3',
                             stroke: [1, 'rgb(0, 0, 0)', 'dashed'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,0.82)']
                         },
                         {
-                            type: 'rect',
+                            rect: ['524px', '-2px', '175px', '50px', 'auto', 'auto'],
                             id: 'text4',
                             stroke: [1, 'rgb(0, 0, 0)', 'dashed'],
-                            rect: ['524px', '-2px', '175px', '50px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(255,255,255,0.82)']
                         }
                     ],
@@ -1535,31 +1568,31 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '262', '71', 'auto', 'auto'],
-                            id: 'Group',
                             type: 'group',
+                            id: 'Group',
+                            rect: ['0px', '0px', '262', '71', 'auto', 'auto'],
                             c: [
                             {
-                                transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                                 rect: ['115px', '11px', '22px', '35px', 'auto', 'auto'],
+                                transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                                 id: 'RectangleCopy',
                                 stroke: [0, 'rgba(0,0,0,1)', 'none'],
                                 type: 'rect',
                                 fill: ['rgba(43,103,147,1.00)']
                             },
                             {
-                                type: 'rect',
+                                rect: ['40px', '0px', '162px', '36px', 'auto', 'auto'],
                                 id: 'Rectangle',
                                 stroke: [2, 'rgba(43,103,147,1.00)', 'none'],
-                                rect: ['40px', '0px', '162px', '36px', 'auto', 'auto'],
+                                type: 'rect',
                                 fill: ['rgba(35,35,35,1.00)']
                             },
                             {
-                                rect: ['58px', '0px', 'auto', 'auto', 'auto', 'auto'],
+                                font: ['Arial, Helvetica, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'nowrap'],
                                 id: 'Text',
                                 text: '<p style=\"margin: 0px;\">​<span style=\"color: rgb(255, 255, 255);\">¡Escribe aquí!</span></p>',
-                                font: ['Arial, Helvetica, sans-serif', [20, 'px'], 'rgba(0,0,0,1)', 'normal', 'none', '', 'break-word', 'nowrap'],
-                                type: 'text'
+                                type: 'text',
+                                rect: ['58px', '0px', 'auto', 'auto', 'auto', 'auto']
                             }]
                         }
                     ],
@@ -1654,7 +1687,7 @@
                         },
                         {
                             userClass: 'box',
-                            rect: ['54px', '69px', '124px', '139px', 'auto', 'auto'],
+                            rect: ['27px', '69px', '124px', '139px', 'auto', 'auto'],
                             id: 'portraitDrag1',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
@@ -1662,7 +1695,7 @@
                         },
                         {
                             userClass: 'box',
-                            rect: ['283px', '0px', '124px', '139px', 'auto', 'auto'],
+                            rect: ['203px', '-1px', '124px', '139px', 'auto', 'auto'],
                             id: 'portraitDrag2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
@@ -1670,8 +1703,16 @@
                         },
                         {
                             userClass: 'box',
-                            rect: ['535px', '82px', '124px', '139px', 'auto', 'auto'],
+                            rect: ['382px', '82px', '124px', '139px', 'auto', 'auto'],
                             id: 'portraitDrag3',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            type: 'rect',
+                            fill: ['rgba(34,34,34,0.00)']
+                        },
+                        {
+                            userClass: 'box',
+                            rect: ['569px', '-1px', '124px', '139px', 'auto', 'auto'],
+                            id: 'portraitDrag4',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(34,34,34,0.00)']
@@ -1688,24 +1729,24 @@
                     autoPlay: false,
                     data: [
                         [
-                            "eid65",
-                            "background-color",
+                            "eid117",
+                            "left",
                             0,
                             0,
                             "linear",
-                            "${portraitDrag2}",
-                            'rgba(34,34,34,0.00)',
-                            'rgba(34,34,34,0.00)'
+                            "${portraitDrag1}",
+                            '27px',
+                            '27px'
                         ],
                         [
-                            "eid54",
+                            "eid123",
                             "left",
                             0,
                             0,
                             "linear",
                             "${portraitDrag2}",
-                            '283px',
-                            '283px'
+                            '203px',
+                            '203px'
                         ],
                         [
                             "eid58",
@@ -1738,37 +1779,57 @@
                             '69px'
                         ],
                         [
-                            "eid57",
+                            "eid119",
                             "top",
                             0,
                             0,
                             "linear",
                             "${portraitDrag2}",
-                            '0px',
-                            '0px'
+                            '-1px',
+                            '-1px'
                         ],
                         [
-                            "eid53",
-                            "left",
+                            "eid125",
+                            "background-color",
+                            0,
+                            0,
+                            "linear",
+                            "${portraitDrag4}",
+                            'rgba(34,34,34,0.00)',
+                            'rgba(34,34,34,0.00)'
+                        ],
+                        [
+                            "eid126",
+                            "background-color",
                             0,
                             0,
                             "linear",
                             "${portraitDrag1}",
-                            '54px',
-                            '54px'
+                            'rgba(34,34,34,0.00)',
+                            'rgba(34,34,34,0.00)'
                         ],
                         [
-                            "eid55",
+                            "eid128",
+                            "background-color",
+                            0,
+                            0,
+                            "linear",
+                            "${portraitDrag2}",
+                            'rgba(34,34,34,0.00)',
+                            'rgba(34,34,34,0.00)'
+                        ],
+                        [
+                            "eid122",
                             "left",
                             0,
                             0,
                             "linear",
                             "${portraitDrag3}",
-                            '535px',
-                            '535px'
+                            '382px',
+                            '382px'
                         ],
                         [
-                            "eid67",
+                            "eid127",
                             "background-color",
                             0,
                             0,
@@ -1778,14 +1839,14 @@
                             'rgba(34,34,34,0.00)'
                         ],
                         [
-                            "eid76",
-                            "background-color",
+                            "eid124",
+                            "left",
                             0,
                             0,
                             "linear",
-                            "${portraitDrag1}",
-                            'rgba(34,34,34,0.00)',
-                            'rgba(34,34,34,0.00)'
+                            "${portraitDrag4}",
+                            '569px',
+                            '569px'
                         ]
                     ]
                 }
