@@ -5,7 +5,8 @@ if (!isset($_SESSION["user"])){
     $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     $_SESSION["link"] = $actual_link;
     header('Location: ../sesiones/form.php');
-} else {
+} 
+else {
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,19 +48,14 @@ if (!isset($_SESSION["user"])){
 }, {dom: [ ]});
 </script>
 <!--Adobe Edge Runtime End-->
-
-</head>
 <body style="margin:0;padding:0;overflow:hidden;">
 	<div id="Stage" class="EDGE-440784112">
 	</div>
+</body>
 <!-- Google Analytics -->
 <?php 
 include('../analytics.php');
 ?>
-<!-- <script type="text/javascript" charset="utf-8" src="../analytics.js"></script> -->
-<!-- Google Analytics Fin-->
-
-</body>
 </html>
 <?php
 }

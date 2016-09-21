@@ -1,0 +1,7 @@
+configurar la seguridad del subdominio ya que se puede acceder por directorio en la barra de busqueda del navegador
+los guardabarrancos se pegan 
+
+http://www.pemdigital.feyalegria.org.ni/
+servidor:ftp.feyalegria.org.ni
+usuario:pem@feyalegria.org.ni
+pass:B7WAR561THFA
